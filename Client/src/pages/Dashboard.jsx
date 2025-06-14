@@ -143,7 +143,10 @@ const Dashboard = () => {
                 key={post._id}
                 className="border border-gray-200 rounded-lg p-6 bg-white shadow-md hover:shadow-lg transition-all"
               >
-                <div onClick={() => navigate(`/post/${post._id}`)}>
+                <div
+                  onClick={() => navigate(`/post/${post._id}`)}
+                  className="hover:cursor-pointer"
+                >
                   <h3 className="text-xl font-semibold text-gray-900">
                     {post.title}
                   </h3>
