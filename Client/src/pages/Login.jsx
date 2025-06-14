@@ -32,7 +32,7 @@ const Login = () => {
       if (res.ok && data.token) {
         localStorage.setItem("token", data.token);
         navigate("/dashboard");
-        window.location.reload();
+
         toast.success(data.message);
       } else {
         toast.error(data.message || "Login failed");
